@@ -7,21 +7,21 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="container">
       <Navbar /> 
       <div className="guide">
             <button>Home</button>
-            <img src={arrowrightgreen} alt="Logo" className="arrow icon" />
+            <img src={arrowrightgreen} alt="Logo" className="arrowIcon" />
             <button>Program category</button>
-            <img src={arrowrightgreen} alt="Logo" className="arrow icon" />
+            <img src={arrowrightgreen} alt="Logo" className="arrowIcon" />
             <button>N-power graduate</button>
-            <img src={arrowrightgreen} alt="Logo" className="arrow icon" />
+            <img src={arrowrightgreen} alt="Logo" className="arrowIcon" />
             <button className="lastChild">N-power agro</button>
       </div>
      <div>
        <div className="homeWriteup">
             <div className="writeUp">
-                <h1>N-Power Agro</h1>
+                <h2>N-Power Agro</h2>
                 <p>The Federal Government is engaging 100,000 qualified young Nigerians<br></br> through the N-Power Agro programme...</p>
                 <button className="homeBttn">Read more<img src={arrowgreen} className="arrowGreen"></img></button>
           </div>
