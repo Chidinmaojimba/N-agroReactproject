@@ -16,7 +16,7 @@ const Home = () => {
             <img src={arrowrightgreen} alt="Logo" className="arrowIcon" />
             <button>N-power graduate</button>
             <img src={arrowrightgreen} alt="Logo" className="arrowIcon" />
-            <button className="lastChild">N-power agro</button>
+            <button className="lastButton">N-power agro</button>
       </div>
      <div>
        <div className="homeWriteup">

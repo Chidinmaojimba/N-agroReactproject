@@ -23,7 +23,7 @@ body{
 
 .navbar {
   border-width: 1px;
-  justify-content: space-between; 
+  justify-content: space-around; 
   padding: 12px 10px 0 10px;
   opacity: 1;
   border: 1px solid;
@@ -44,7 +44,7 @@ body{
   width: 87.11111450195312;
   height: 56;
   opacity: 1;
-  margin-left: 26px;
+  ;
 
 }
 
@@ -88,8 +88,6 @@ body{
   transition: 0.2s ease;
   height: 56px;
   width: 162px;
-  margin-right: 26px;
-
 }
 
 .apply-btn:hover {
@@ -106,11 +104,13 @@ body{
 
 .guide {
   display: flex;
-  /* width: 542px; */
+  max-width: 622px; 
     height: 56px;
     padding: 16px 8px 16px 8px;
     gap: 4px;
-    margin-left: 50px; 
+    /* margin-left: 60px ;  */
+    justify-content: flex-end;
+    
   
 }
 
@@ -129,19 +129,21 @@ body{
   opacity: 1;
 }
 
- /* .arrowIcon {
-  width: 2.99500036239624;
-  height: 2.5261869430542;
-  top: 3.74px;
-  left: 4px;
-  opacity: 1;
-} */
+  .arrowIcon{
+  width: 16px;
+  height: 16px;
+  margin-top: 20px;
 
-.guide p lastP{
+
+
+} 
+
+.guide button:last-child {
   color: #181818;
 }
 
-.homeWriteup {
+
+.homeWriteup {  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,6 +264,7 @@ body{
   gap: 40px;
 }
 
+
 .overviewTwo h2 {
   width: 780;
   height: 96;
@@ -309,13 +312,11 @@ footer {
   display: flex;
   width: 1440;
   height: 96;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   opacity: 1;
-  padding-top: 12px;
-  padding-right: 88px;
-  padding-bottom: 12px;
-  padding-left: 88px;
-  border-width: 1px;
+  padding-top: 12px 88px 12px 88px;
+  border-width: 1px; 
   background: #eee8e8;
   border: 1px solid;
   margin-top: 100px;
@@ -326,7 +327,7 @@ footer {
   width: 103.11111450195312;
   height: 72;
   opacity: 1;
-  gap: 8px;
+  /* gap: 8px; */
   padding: 8px;
 }
 
@@ -350,11 +351,12 @@ display: flex;
 }
 
 .footer para {
-  width: 302;
-  height: 40;
+  width: 302px;
+  height: 40px;
   opacity: 1;
   gap: 8px;
   padding: 8px;
+  
 
 }
 
