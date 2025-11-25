@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../component/Navbar"; 
 import arrowrightgreen from "../assets/arrow-rightgreen.png"; 
 import imagehero from "../assets/imagehero.png";
 import arrowgreen from "../assets/Arrowgreen.png"
@@ -8,7 +7,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div className="container">
-      <Navbar /> 
+      
       <div className="guide">
             <button>Home</button>
             <img src={arrowrightgreen} alt="Logo" className="arrowIcon" />

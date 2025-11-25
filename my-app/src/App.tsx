@@ -1,17 +1,31 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import { Routes, Route, } from 'react-router-dom';
+import Navbar from './component/Navbar';
 import Home from "./component/Home";
+import Instruction from './component/Instruction';
 
 
 
-function App() {
-  
-
-  return (
+const App = () => {
+  return ( 
     <>
-     <Home/> 
+    <Navbar/>
+    <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/instruction' element={<Instruction />}/>
+      </Routes>
     </>
-  )
+   );
 }
+ 
+export default App;
 
-export default App
+
+
+
+
+
+
+
+
+

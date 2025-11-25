@@ -68,8 +68,8 @@ body{
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0%;
-
 }
+
 
 .nav-links li:hover {
   color: #288855;
@@ -369,6 +369,108 @@ display: flex;
   letter-spacing: 0%;
   color: #3F3F3F;
 }
+
+
+
+/* instruction component */
+
+.main-instruction {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 ;
+  padding: 0;
+  background:  #FFFFFF;
+;
+}
+
+.instruction {
+  max-width: 1440px;
+  min-height: 800px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+  /* .apply-card { 
+  width: 416px;
+  height: 655px;
+  opacity: 1;
+  border-radius: 24px;
+  }  */
+
+  .instructionTwo {
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between; 
+     margin-bottom: 200px;
+    /* gap: 18px; */
+    
+  }
+
+  .instructionTwo h3 {
+font-family: Mulish;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+
+  }
+  
+  .instructionTwo p {
+    font-family: Mulish;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-thickness: 0%;
+color: #F8B243;
+  }
+
+  .instructionTwo ol li {
+    font-family: Mulish;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+  }
+
+  .instructionTwo button {
+  width: 658px;
+  height: 56px;
+  opacity: 1;
+  border-radius: 6px;
+  gap: 12px;
+  padding: 16px;
+  background: #288855;
+  color: #FFFFFF;
+  font-family: Mulish;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-top: 40px;
+
+  }
+
+  .instructionTwo button:last-child {
+    background: transparent;
+    color: #288855;
+    margin-top: 18px;
+  }
+
+ .instruction-logo {
+  width: 87px;
+  height: 56px;
+  margin-bottom: 40px;
+ }
+
+
 
 
 
