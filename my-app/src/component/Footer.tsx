@@ -1,4 +1,3 @@
-import React from "react";
 import npowerlogo from "../assets/npowerlogo.png"; 
 
 

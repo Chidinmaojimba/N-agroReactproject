@@ -1,35 +1,31 @@
-import React from "react";
 import npowerlogo from "../assets/npowerlogo.png"; 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+
 const Navbar = () => {
+const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="nav-left">
         <img src={npowerlogo} alt="Logo" className="nav-logo" />
       </div>
 
-      {/* <ul className="nav-links">
-        <li>About</li>
-        <li>Application Status</li>
-        <li>Contact Us</li>
-      </ul> */}
-
-
+     
         <ul className="nav-links">   
-          <li>
-            <Link to='/'>Home</Link>
+          <li >
+            <Link to='/' className="linkss">Home</Link>
           </li>
           <li>
-            <Link to='/instruction'>Application Status</Link>
+            <Link to='/instruction' className="linkss">Application Status</Link>
           </li>
           <li>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/contact' className="linkss">Contact</Link>
           </li>
         </ul>
 
-
-
-      <button className="apply-btn">Apply</button>
+      <button  className="apply-btn" onClick={() => navigate("/biodata")}>
+         Apply 
+       </button>
     </nav>
   );
 };

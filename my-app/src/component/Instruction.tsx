@@ -1,13 +1,16 @@
-import React from "react";
+import "../styles/instruction.css"
 import applycard from "../assets/applycard.png"
 import npowerlogo from "../assets/npowerlogo.png"; 
+import { useNavigate } from "react-router-dom";
+
 
 const Instruction = () => {
+    const navigate = useNavigate();
     return ( 
         <div className="main-instruction">
             <div className="instruction">
                 <div className="instructionOne">
-                    <img src={applycard} alt="apply-card"/>
+                    <img src={applycard} alt="apply-card" />
                 </div>
                 <div className="instructionTwo">
                     <img src={npowerlogo} alt="Logo" className="instruction-logo" />
@@ -18,8 +21,13 @@ const Instruction = () => {
                         <li>Applicant must be at least 18 years of age.</li>
                         <li>Applicant must not already be a beneficiary of the N-Power<br></br> Programme.</li>
                     </ol>
-                    <button>Apply</button>
-                    <button>Take Examination</button>
+                
+                    <button onClick={() => navigate("/biodata")}>
+                         Apply 
+                    </button>
+                    <button >Take Examination</button>
+
+                    
                     </div>
             </div>
         </div>
@@ -27,3 +35,11 @@ const Instruction = () => {
 }
  
 export default Instruction;
+
+
+
+
+
+
+
+

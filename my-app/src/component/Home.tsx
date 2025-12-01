@@ -1,10 +1,11 @@
-import React from "react";
 import arrowrightgreen from "../assets/arrow-rightgreen.png"; 
 import imagehero from "../assets/imagehero.png";
 import arrowgreen from "../assets/Arrowgreen.png"
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+const navigate = useNavigate();
   return (
     <div className="container">
       
@@ -41,14 +42,17 @@ const Home = () => {
           <div className="overviewTwo">
                   <h2> Overview</h2>
                   <p>N-Power Agro volunteers will provide advisory services to farmers across the<br></br> country. They will disseminate the knowledge that has been aggregated by the<br></br> Federal Ministry of Agriculture and Rural Development in the area of extension<br></br> services. They will also gather data of Nigeria’s agriculture assets.</p>
-                  <button className="overviewBttn">Apply</button>
+
+                  <button  className="overviewBttn" onClick={() => navigate("/biodata")}>
+                    Apply 
+                   </button>
           </div>
 
      </div>
 
       <Footer/>
      
-    </div>
+    </div>  
   );
 };
 
